@@ -2,6 +2,7 @@
 
 ### Steven Kneiser's notes for his [Spartan Hackers](http://spartanhackers.com/) talk
 
+[![Vim Video](http://img.youtube.com/vi/zaeIhUQQxQA/0.jpg)](https://youtu.be/zaeIhUQQxQA)
 ![Prepare for vim](http://cdn.meme.am/instances/63319928.jpg)
 
 Windows users should download PuTTY:
@@ -46,11 +47,11 @@ Once you open up vim:
 
 From here you can enter text like you would in any simple text editor (you might not be able to <backspace> like you'd expect depending on your configuration but we'll fix that later).  As soon as you're done making edits:
 
-- **<Esc> or <C-c> (ctrl-c)** - return to normal/command mode
+- **ESC or ^c (ctrl-c)** - return to normal/command mode
 
 If at any point you feel scared and would like to just get away from the beautiful beast that is Vim, then you will always be able to spam either of those keys without consequence and you'll quickly be greeted by audio & visual bells that make that system error sound you might be familiar with (we can turn those off later too).  Now that we are done making changes and would like to either save (or *write*), quit, or both:
 
-- **:w**, **:q**, & **:wq**
+- **:w**, **:q**, **:wq**
 
 This will promptly write to the file and/or quit depending on what you do.  Vim will only yell at you if you try and quit after having made changes, which it will simply ask you to re-try with a "**:q!**"
 
@@ -61,7 +62,7 @@ This will promptly write to the file and/or quit depending on what you do.  Vim 
 #### About modes
 
 In other text editors, you open them up and just start typing.  Vim is more powerful than that.  You should think of every single key on your keyboard as a function that operates on bodies of text.
-If you just start jamming on your keyboard, then don't be surprised when a few keys end up deleting 300 lines of text.  This is mostly why everyone who hasn't learned vim is so scared of it so **whenever you're in doubt, remember <C-c>**.
+If you just start jamming on your keyboard, then don't be surprised when a few keys end up deleting 300 lines of text.  This is mostly why everyone who hasn't learned vim is so scared of it so **whenever you're in doubt, remember ^c**.
 
 ###### Command Mode
 
@@ -74,7 +75,7 @@ This is the default mode that you are in whenever you open a file and/or have "e
 This should be thought of as a subset of command mode.  It's useful for highlighting bodies of text that we'll perform functions on later.  Like many commands we'll go over, there are cool little variations that handle other use cases.  For example:
 
 - **V** - enter visual mode (only selects entire lines at a time)
-- **C-v** - enter visual block mode (think of how you'd copy tables)
+- **^v** - enter visual block mode (think of how you'd copy tables)
 
 ###### Insert Mode
 
@@ -91,18 +92,18 @@ This is the one you pressed **i** to enter.  It's the dead-simple mode that (BIG
 
 #### Maneuvering Text w/ Motions
 
-- **h**, **j**, **k**, & **l** - your arrow keys
+- **h**, **j**, **k**, **l** - your arrow keys
 
 ![Vim Keys](http://www.catonmat.net/images/why-vim-uses-hjkl/adm-3a-hjkl-keyboard.jpg)
 
 Funny enough, this is probably the biggest hurdle to learning Vim.  I hope that brings you comfort that the VERY ARROW KEYS are probably the least intuitive part to Vim so unfortunately this is just something you are going to have to brute-force.  I can't offer you much advice but **I CAN point you to [an online game that tricks you into learning them by having you maneuver a cool landscape](http://vim-adventures.com/)**  There is good news, everything else after this will only begin to replace your need to move one character at a time.
 
-- **0** & **$** - snaps to start/end of line
-- **w**, **e**, & **b** - skips across "words"
+- **0**, **$** - snaps to start/end of line
+- **w**, **e**, **b** - skips across "words"
 
 > Now it's worth mentioning *count*: to most commands you learn, they can be given a count.  We'll take another look at this later but notice what happens if you type **3k** or **2w**.
 
-- **/** & **?** - searches for keyword upon <Enter>
+- **/**, **?** - searches for keyword upon <Enter>
 
 Search can also be a great way to skip across text.  Later on we'll set our search to highlight the results.  All you need to know is that in order to skip across results:  press **n** or **N** to hop to the next or previous.  The **?** key does the same except with everything simply flipped, a reversed search.
 
@@ -116,7 +117,7 @@ We'll get to how to properly cut & copy later but first:  you never ACTUALLY del
 
 More about paste...
 
->	CSE320 Story:
+>	CSE-320 Story:
 >	
 >	Just this last week, I was using vim to work with Assembly in class.  Think of it simply as code that manipulates addresses and values at the binary level *shivers*.  Anyways, I wanted to make the computer stall for a full second.  Well hmm, processors probably clock in at about ten trillion ticks per second...
 >	
@@ -124,10 +125,10 @@ More about paste...
 >	
 >	Simply copy the line of Assembly code for "no operation" and paste with a simple "1-0-0-0-0-0-0-0-0-0-0-0-0-0-p"...
 >	
->	Well there goes 50% of the CPU Usage on the server rack dedicated to north.cse.msu.edu.  If only I could've pressed ten trillion <Esc>'s...  Don't worry I remoted back in from somewhere else and manually killed the process *God bless it's soul*  Speaking of mistakes...
+>	Well there goes 50% of the CPU Usage on the server rack dedicated to north.cse.msu.edu.  If only I could've pressed ten trillion ESC's...  Don't worry I remoted back in from somewhere else and manually killed the process *God bless it's soul*  Speaking of mistakes...
 
 - **u** - undo
-- **C-r** - re-do
+- **^r** - re-do
 
 Also here's a couple more cool ones because why not:
 
@@ -150,12 +151,12 @@ Those are the big ones that anyone should eventually know.  However, for the sak
 - **H** - shift cursor to top of window or *high*
 - **M** - shift cursor to middle of window or *mid*
 - **L** - shift cursor to bottom of window or *low*
-- **C-b** - Scroll up one page or *back*
-- **C-u** - Scroll up 1/2 page or *up*
-- **C-y** - Scroll up one line
-- **C-e** - Scroll down one line
-- **C-d** - Scroll down 1/2 page or *down*
-- **C-f** - Scroll down one page or *foreward*
+- **^b** - Scroll up one page or *back*
+- **^u** - Scroll up 1/2 page or *up*
+- **^y** - Scroll up one line
+- **^e** - Scroll down one line
+- **^d** - Scroll down 1/2 page or *down*
+- **^f** - Scroll down one page or *foreward*
 
 Congratulations! You're officially a vim user that knows as much as anyone who's finished the tutorial a couple times and feels somewhat comfortable.  You should know that vim has built-in help pages that cover any subject in serious depth.  We'll cover them later.  For now all you need to know is:
 
@@ -199,7 +200,9 @@ Okay, you just learned A LOT...  like more than some who use Vim for months even
 
 We're finally gonna take a breather from all those keyboard shortcuts and approach some of the more functional aspects behind the editor asides from moving around text.
 
+>
 > 5-minute recess for people to stretch, get some food, and go to the bathroom.
+>
 
 ## Getting the most out of Vim (30 minutes)
 
@@ -249,7 +252,7 @@ Honestly this isn't my expertise since I don't use any but many go on to find pl
 #### Alternative editors
 
 - Microsoft Word *lol seriously, I use vim for IAH papers*
-- A case for other editors (hah more like **just vi**,  *...and Emacs   ...maybe*)
+- A case for other editors (hah, more like **just vi**  *...and Emacs   ...maybe*)
 
 > Thanks so much for coming out, everybody.  I couldn't admire you enough for taking the time to give Vim your attention.
 > 
@@ -259,13 +262,20 @@ Honestly this isn't my expertise since I don't use any but many go on to find pl
 
 ## Further Reading
 
-- [My ABSOLUTE FAVORITE cheatsheet](http://i.imgur.com/YLInLlY.png)
-- [Short URL to this talk](https://goo.gl/nRqVfL)
-- [Learn from others' screencasts](http://vimcasts.org/)
+###### [Short URL to this talk](https://goo.gl/nRqVfL)
 
-- [More on vim registers](http://blog.sanctum.geek.nz/advanced-vim-registers/)
+###### Other information
+
+- [My ABSOLUTE FAVORITE cheatsheet](http://i.imgur.com/YLInLlY.png)
+
 - [More on vim marks](http://vim.wikia.com/wiki/Using_marks)
 
-- [Learning Vim in 2014: Vim as Language](http://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/)
-- [Stop the Vim configuration Madness](http://usevim.com/2013/02/20/configuration/)
+- [More on vim registers](http://blog.sanctum.geek.nz/advanced-vim-registers/)
 
+- [Learn from others' screencasts](http://vimcasts.org/)
+
+###### Relevant articles
+
+- [Learning Vim in 2014: Vim as Language](http://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/)
+
+- [Stop the Vim configuration Madness](http://usevim.com/2013/02/20/configuration/)
