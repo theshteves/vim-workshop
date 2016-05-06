@@ -32,7 +32,7 @@ Just a heads up, I'm gonna be going over A LOT in a few moments.  After my [bash
 
 At any point in the learning curve, you're going to be ready to really internalize 10% more information so don't feel bad that you feel behind after I explain virtually everything I know after half a year with vim.  Everyone here came to learn Vim (or see me ...I get it) so today I'm going to benefit everyone by becoming a firehose of information and getting as much to stick as possible.
 
-## Basic Navigation (15 minutes)
+## Basic Navigation (20 minutes)
 
 #### All you NEED to know
 
@@ -157,7 +157,7 @@ Congratulations! You're officially a vim user that knows as much as anyone who's
 
 - **:help** - Opens up the help pages in another window upon <Enter>
 
-## Understanding Text Objects (5 minutes)
+## Understanding Text Objects (10 minutes)
 
 In vim, text is more than a string of characters, vim takes care to understand the subtle nuances between everything from a word to a WORD.  I don't even think I know what that means... *of couse I do*. What makes vim's text-objects so powerful is that **with each operator, text-object, and motion you know, the number of commands you can use multiplies.** 
 
@@ -246,8 +246,13 @@ Honestly this isn't my expertise since I don't use any but many go on to find pl
 
 #### Alternative editors
 
+<<<<<<< 3689b1f7851f4c2db6395e000ec025a59bbfcebe
 - Microsoft Word *lol seriously, I use vim for IAH papers*
 - A case for other editors (hah, more like **just vi**  *...and Emacs   ...maybe*)
+=======
+- Microsoft Word *lol seriously, I use vim for college essays*
+- A case for other editors (hah more like **just vi**,  *...and Emacs   ...maybe*)
+>>>>>>> Added some cool resources
 
 > Thanks so much for coming out, everybody.  I couldn't admire you enough for taking the time to give Vim your attention.
 > 
@@ -269,8 +274,16 @@ Honestly this isn't my expertise since I don't use any but many go on to find pl
 
 - [Learn from others' screencasts](http://vimcasts.org/)
 
+- [Hardcore? Dive into vimscript](http://learnvimscriptthehardway.stevelosh.com/)
+
+- [Awesome plugin search](http://vimawesome.com/)
+
+- [Folding: something cool I learned just after the talk](http://vim.wikia.com/wiki/Folding)
+
 ###### Relevant articles
 
 - [Learning Vim in 2014: Vim as Language](http://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/)
 
 - [Stop the Vim configuration Madness](http://usevim.com/2013/02/20/configuration/)
+
+- [Wikipedia - Editor War (Vim vs. Emacs)](https://en.wikipedia.org/wiki/Editor_war)
