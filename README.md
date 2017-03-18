@@ -246,13 +246,8 @@ Honestly this isn't my expertise since I don't use any but many go on to find pl
 
 #### Alternative editors
 
-<<<<<<< 3689b1f7851f4c2db6395e000ec025a59bbfcebe
-- Microsoft Word *lol seriously, I use vim for IAH papers*
-- A case for other editors (hah, more like **just vi**  *...and Emacs   ...maybe*)
-=======
 - Microsoft Word *lol seriously, I use vim for college essays*
 - A case for other editors (hah more like **just vi**,  *...and Emacs   ...maybe*)
->>>>>>> Added some cool resources
 
 > Thanks so much for coming out, everybody.  I couldn't admire you enough for taking the time to give Vim your attention.
 > 
