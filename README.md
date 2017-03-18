@@ -1,6 +1,6 @@
 # Getting Started with Vim
 
-[![Spartan Hackers](http://spartanhackers.com/img/spartan-hackers-banner.png)](http://spartanhackers.com)
+[![Spartan Hackers](http://spartanhackers.com/static/img/spartan-hackers-banner.png)](http://spartanhackers.com)
 
 [![Vim Video](http://img.youtube.com/vi/zaeIhUQQxQA/0.jpg)](https://youtu.be/zaeIhUQQxQA)
 
